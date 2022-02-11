@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(68.15deg, #0c677e 16.25%, #03040a 85.61%);
+    font-size: 100%;
+}
+.preload{
+    position: fixed;
+    z-index:99999;
+    top:0; left:0;
+    width:100%; height:100%;
+    opacity:1;
+    background-color:#06060c;
+    background-image:url(img/astrinho.gif);
+    background-size:298px 298px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-imagem {
+    height: 98px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    background-color: #0a5a6e;
+    width: 165px;
+    height: 28px;
+    box-shadow: 6px 5px 8px rgba(1, 11, 14, 0.397);
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cabecalho-menu-item {
+    cursor: pointer; /*Usar a mãozinha*/
+}
+
+.cabecalho-menu-item:hover
+{
+        -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.5);
+        transform: scale(1.1);
+}
+
+
+
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #000124;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-titulo {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #fff2e7;
+}
+
+.conteudo-principal-subtitulo {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff2e7;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #0c677e;
+    width: 185px;
+    height: 67px;
+    border: none;
+    box-shadow: 4px 9px 8px rgba(0, 0, 0, 0.397);
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.conteudo-principal-escrito-botao {
+    cursor: pointer; /*Usar a mãozinha*/
+}
+
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: #276772;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+.conteudo-principal-imagem {
+    height: 480px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #000124;
+    padding-top: 48px;
+    font-family: 'Kanit', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff2e7;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #97c4cc;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #000124;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
